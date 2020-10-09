@@ -1,0 +1,515 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 44px;
+  background-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.input {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+}
+
+.address-input {
+  flex: 0.8;
+  background-image: url(../img/home.svg);
+}
+
+.input-search {
+  width: 300px;
+  background-image: url(../img/search.svg);
+  margin-left: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  border-radius: 10px;
+  color: #595959;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button-primery {
+  background: #75736b;
+  border: 1px solid #d4d1b6;
+  color: white;
+  margin-right: 10px;
+}
+
+.button-card-text {
+  margin-right: 10px;
+}
+.button-icon {
+  margin-right: 6px;
+}
+
+.promo {
+  background: url(../img/pizza.jpeg) no-repeat top right 100px / 500px;
+  border-radius: 10px;
+  padding: 68px 70px;
+  margin-bottom: 56px;
+}
+.promo-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  color: white;
+}
+.promo-text {
+  max-width: 538px;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: white;
+  margin-right: 30px;
+}
+.cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  margin-bottom: 30px;
+  flex-basis: 20%;
+  text-decoration: none;
+}
+
+.card-img {
+  /* width: 384px; */
+  height: 250px;
+  object-fit: cover;
+}
+.card-text {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding-left: 23px;
+  padding-right: 23px;
+  color: white;
+}
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+.card-title-reg {
+  font-weight: 400;
+}
+.card-tag {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 1px 8px;
+  color: black;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-price-bold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: white;
+  margin-left: 94px;
+}
+
+.card-buttons {
+  display: flex;
+  align-items: center;
+}
+.raiting {
+  margin-right: 26px;
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.price,
+.category {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8c8c8c;
+}
+
+.ingredients {
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
+  margin-top: 10px;
+}
+
+.category {
+  margin-left: 10px;
+}
+
+.price:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #8c8c8c;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  margin-left: 35px;
+  margin-right: auto;
+}
+.footer-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-link:not(:last-child) {
+  margin-right: 21px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  display: none;
+}
+
+.is-open {
+  display: flex;
+}
+
+.modal-dialog {
+  max-width: 780px;
+  width: 95%;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 40px 45px;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.modal-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.close {
+  font-size: 36px;
+  border: none;
+  background-color: transparent;
+}
+.modal-body {
+  margin-bottom: 52px;
+}
+.food-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #d9d9d9;
+  margin-bottom: 15px;
+}
+.food-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+.food-price {
+  margin-left: auto;
+  margin-right: 47px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+.food-counter {
+  display: flex;
+  align-items: center;
+}
+.counter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #40a9ff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #40a9ff;
+}
+
+.counter {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.modal-price-tag {
+  background: #262626;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fafafa;
+  padding: 15px 20px;
+}
+@media (max-width: 1366px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    background-position: top right -60px;
+  }
+}
+
+@media (max-width: 930px) {
+  .promo {
+    background-size: 450px;
+    background-position: right -2px top 30px;
+    padding: 50px;
+    margin-bottom: 36px;
+  }
+  .promo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 36px;
+    color: white;
+  }
+  .promo-text {
+    max-width: 338px;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .card {
+    flex-basis: 49%;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 817px) {
+  .promo {
+    background-size: 320px;
+    background-position: right 54px top 5px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .promo-title {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .promo-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .card {
+    flex-basis: 25%;
+  }
+}
+
+@media (max-width: 741px) {
+  .promo {
+    background-image: none;
+    margin-left: 40px;
+    padding-left: 20px;
+  }
+  .promo-title {
+    margin: 0px;
+  }
+  .section-title {
+    font-size: 20px;
+    font-size: 20px;
+  }
+  .promo-text {
+    max-width: none;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+  .card-img {
+    width: 100%;
+  }
+
+  .footer-nav {
+    margin-left: 0;
+    margin-right: 0;
+    order: 0;
+  }
+  .footer-logo {
+    margin-right: 41px;
+    order: 1;
+  }
+  .social-links {
+    order: 2;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer-block {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 627px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .address-input {
+    margin-top: 5px;
+    order: 5;
+    flex: 1;
+  }
+}
+@media (max-width: 480px) {
+  .button-text {
+    display: none;
+  }
+  .button {
+    min-height: 40px;
+  }
+  .button-icon {
+    margin: 0;
+  }
+  .section-heading {
+    flex-wrap: wrap;
+  }
+  .footer-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    order: 0;
+    height: 50px;
+    width: 50px;
+    display: none;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer-nav {
+    margin-left: 54px;
+    margin-bottom: 20px;
+  }
+  .card-text {
+    padding-bottom: 0;
+  }
+}
